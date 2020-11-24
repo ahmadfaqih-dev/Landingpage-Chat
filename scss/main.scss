@@ -1,0 +1,212 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+// Variables
+$primaryColor: #3866E6;
+$secondaryColor: #282828;
+$textColor: #828282;
+$tertiaryColor: #ffff;
+
+
+// Style
+body {
+    font-family: 'Roboto', sans-serif;
+
+    &::before {
+        content: '';
+        background-image: url(../img/bg.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 43vmax;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+// Navbar
+.custom-nav {
+    span {
+        color: $primaryColor;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-left: 0.1em;
+    }
+}
+
+#navbarNav {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $tertiaryColor;
+                font-weight: 400;
+                margin-left: 1em;
+                text-decoration: none;
+                transition: 0.3s color ease;
+
+                &:hover {
+                    color: darken($primaryColor, 50%);
+                }
+
+            }
+        }
+
+        .sign-up-button {
+            display: inline-block;
+            border-radius: 10px;
+            padding: 0.4em 2em;
+            
+            background-color: $tertiaryColor;
+            color: $primaryColor;
+            
+        }
+    }
+}
+
+// Custom section
+.custom-section {
+    margin-top: 8em;
+    h3 {
+        font-weight: 700;
+        font-size: 38px;
+        color: $primaryColor;
+        white-space: nowrap;
+        line-height: 1;
+    }
+
+    p {
+        
+        color: $secondaryColor;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+  
+    .btn-user {
+        border-radius: 10px;
+        padding: 0.8em 2em;
+        text-decoration: none;
+        background-color: $primaryColor;
+        color: white
+        
+    }
+
+    .btn-admin {
+        border: 1px solid $primaryColor;
+        border-radius: 10px;
+        padding: 0.8em;
+        text-decoration: none;
+        background-color: white
+        
+        
+    
+    }
+
+}
+
+.custom-content {
+   margin-top: 258px;
+
+   img {
+       max-width: 100%;
+   }
+
+   h3 {
+       font-size: 38px;
+       font-weight: 700;
+       color: $primaryColor;
+       margin-top: 230px;
+   }
+
+   p {
+       font-size: 22px;
+       font-weight: 400;
+       color: $textColor;
+       line-height: 30px;
+       margin-top: 20px;
+   }
+}
+
+.custom-panel {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    .bg-panel-invite {
+        background: #FFFFFF;
+        box-shadow: 0px 5px 24px rgba(56, 102, 230, 0.12);
+        border-radius: 15px;
+        // width: 370px;
+        // height: 230px;
+        margin-left: 15px;
+    }
+
+    img {
+        margin-top: -50px
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $primaryColor
+    }
+
+    p {
+        font-size: 22px;
+       font-weight: 400;
+       color: $textColor;
+       line-height: 30px;
+       margin-top: 20px;
+    }
+}
+
+.bg-call {
+    background-image: url(../img/call.png);
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    position: absolute;
+    width: 1365px;
+    height: 330px;
+    left: 0px;
+    top: 1760px;
+
+    h3 {
+        font-size: 38px;
+        font-weight: 700;
+        color: $tertiaryColor;
+        text-align: center;
+        margin-top: 40px;
+    }
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        color: $tertiaryColor;
+        line-height: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    a {
+        text-align: center;
+        border-radius: 5px;
+        padding: 0.8em 2em;
+        text-decoration: none;
+        background-color: $tertiaryColor;
+        color: $primaryColor
+    }
+
+}
+
+.footer {
+    position: absolute;
+    width: 1170.02px;
+    height: 0px;
+    left: 135px;
+    top: 2150px;
+    border: 1px solid #3866E6;
+}
